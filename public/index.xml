@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>D29 Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://DWilson29.github.io/</link>
     <description>Recent content on D29 Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2024 19:40:57 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Learning Hugo or: How I Learned to Stop Worrying and Love Static Site Generation</title>
-      <link>http://localhost:1313/posts/hugo-basics/</link>
-      <pubDate>Sat, 08 Jun 2024 19:40:57 -0700</pubDate>
-      <guid>http://localhost:1313/posts/hugo-basics/</guid>
-      <description>When I first started my blog shortly after graduating from college, I thought it would be so cool to make it myself. What does make it yourself mean? Well, I found a premade HTML template online, plugged in some pictures, changed some of the words, and let it rip.&#xA;It sucked. Both practically, in the sense that it looked lke shit, and as a portfolio, in the sense that it looked like shit and it didn&amp;rsquo;t demonstrate anything about my skills.</description>
-    </item>
+    <atom:link href="https://DWilson29.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
