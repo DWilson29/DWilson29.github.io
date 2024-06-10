@@ -7,10 +7,6 @@ When I first started my blog shortly after graduating from college, I thought it
 
 It sucked. Both practically, in the sense that it looked lke shit, and as a portfolio, in the sense that it looked like shit **and** it didn't demonstrate anything about my skills.
 
-![Picture of my previous site](/img/oldwebsite.png)
-
-Like come on, what is this? Looks awful. Not a fan besties.
-
 ### Who am I?
 Let me be clear. I'm not a web developer. So, showcasing my web development skills is not what I am looking for. I don't want to learn Javascript. I did a bit in school and a bit for personal projects, but I did not like it. There are so many other interesting things to be doing, why would you spend your life writing Javascript slop?
 
