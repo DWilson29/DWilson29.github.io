@@ -32,4 +32,5 @@ Then you start typing. You can spend more time doing the things you want to do, 
 
 # Links and References
 - [Hugo Quickstart Guide](https://gohugo.io/getting-started/quick-start/)
-- [Mainroad: The Hugo Theme I used.](https://github.com/Vimux/Mainroad)
+- [Mainroad: The Hugo Theme I used](https://github.com/Vimux/Mainroad)
+- [Link to a Guide I used to figure out the Github Actions setup](https://www.bradleynewman.dev/tutorials/creating-and-hosting-a-static-website-with-hugo-and-github-pages/)
