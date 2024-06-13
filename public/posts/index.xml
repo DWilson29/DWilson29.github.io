@@ -6,8 +6,15 @@
     <description>Recent content in Posts on D Wilson Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2024 19:40:57 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2024 19:38:45 -0700</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Sudoku Solver in Golang</title>
+      <link>//localhost:1313/posts/golangsudoku/</link>
+      <pubDate>Wed, 12 Jun 2024 19:38:45 -0700</pubDate>
+      <guid>//localhost:1313/posts/golangsudoku/</guid>
+      <description>I used to like playing Sudoku. I used to have an app on my phone that would let me play Sudoku. I mostly used it during class whenever I was bored. I ended up getting to a point with the app where I ended up stuck on the really hard board, and I just couldn&amp;rsquo;t figure it out. True Sudoku fans may tell you it&amp;rsquo;s all about skill. In truth, it&amp;rsquo;s really a truly simple algorithm.</description>
+    </item>
     <item>
       <title>Learning Hugo or: How I Learned to Stop Worrying and Love Static Site Generation</title>
       <link>//localhost:1313/posts/hugo-basics/</link>

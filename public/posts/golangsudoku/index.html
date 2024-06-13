@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Building a Sudoku Solver in Golang - D Wilson Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="D Wilson Blog" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">D Wilson Blog</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Building a Sudoku Solver in Golang</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<p>I used to like playing Sudoku. I used to have an app on my phone that would let me play Sudoku. I mostly used it during class whenever I was bored. I ended up getting to a point with the app where I ended up stuck on the really hard board, and I just couldn&rsquo;t figure it out. True Sudoku fans may tell you it&rsquo;s all about skill. In truth, it&rsquo;s really a truly simple algorithm. If only we had machines that let us think about very simple problems very efficiently.</p>
+<h3 id="making-a-sudoku-solver">Making a Sudoku solver</h3>
+<p>Sudoku boils down to a fairly simple algorithm.</p>
+<ol>
+<li>Find an empty space</li>
+<li>For all digits 1-9, try them in the space and see if it works given the rules of the board</li>
+<li>When one works, go onto the next space</li>
+<li>When you reach a contradiction, go back</li>
+</ol>
+<p>Fundementally, this is the problem you solve when you do Sudoku by hand. When you boil it down to this, it&rsquo;s fairly boring.</p>
+<h3 id="why-golang">Why Golang</h3>
+<p>Because I wanted to.</p>
+<h3 id="making-it-smarter-than-the-average-copy-and-paste">Making it smarter than the average copy and paste</h3>
+<p>I also added a CLI interface for inputing a board state with a variety of methods, including CSV and by manual entry.</p>
+<h3 id="learnings">Learnings</h3>
+<ul>
+<li>Make your code more friendly to CLI interfacing. I should&rsquo;ve probably made it so you can pass in the file path and have it automatically assume you want to use that file. That would make this useful in automated testing.</li>
+<li>I hate python. I love you curly braces. Curly braces are the language of god, tabs are the language of the devil.</li>
+<li>Sanitizing CSV input is hard sometimes. An extra space in the CSV file destroyed my processing. I couldn&rsquo;t figure out how to fix it. I will probably look back at it at somepoint.</li>
+<li>I hate python.</li>
+</ul>
+<h1 id="links-and-references">Links and References</h1>
+<ul>
+<li><a href="https://www.endyourif.com/building-a-sudoku-solver-in-python/">Sudoku Solver Python Guide</a></li>
+<li><a href="https://github.com/DWilson29/GoSudokuSolver">Link to my repo</a></li>
+</ul>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 D Wilson Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
