@@ -6,8 +6,15 @@
     <description>Recent content on D Wilson Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Jun 2024 19:38:45 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2024 19:23:59 -0700</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I stumbled my way into learning Websockets</title>
+      <link>//localhost:1313/posts/websocketsbasics/</link>
+      <pubDate>Sat, 07 Sep 2024 19:23:59 -0700</pubDate>
+      <guid>//localhost:1313/posts/websocketsbasics/</guid>
+      <description>So I&amp;rsquo;ve been on a Golang kick recently. After hearing all the cool kids talk about it, I&amp;rsquo;ve been trying to learn everything about it. Along with that, I&amp;rsquo;ve been trying to learn new/interesting concepts that Golang can be used for, particularly focusing on stuff I suck at.&#xA;Web development is one such area. I hate Javascript. It gives me the ick-ies. But, I hear of these wonderful Golang packages that let us do so much without having to touch a line of stinking JS.</description>
+    </item>
     <item>
       <title>Building a Sudoku Solver in Golang</title>
       <link>//localhost:1313/posts/golangsudoku/</link>
