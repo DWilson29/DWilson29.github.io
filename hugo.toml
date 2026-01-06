@@ -3,3 +3,32 @@ title = "D Wilson Blog"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
+
+[Author] # Used in authorbox
+  name = "D Wilson"
+  bio = "A Software Engineer with a focus in .Net/Go, CI/CD and a variety of wierd things"
+  #avatar = "img/avatar.png"
+
+[Params]
+  description = "A Software Engineer with a focus in .Net/Go, CI/CD and a variety of wierd things"
+  authorbox = true
+  pager = true
+
+[Params.author]
+  name = "DWilson"
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  categories_counter = false # Enable counter for each category in "Categories" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  linkedin = "dominicwilson2"
+  github = "DWilson29"
