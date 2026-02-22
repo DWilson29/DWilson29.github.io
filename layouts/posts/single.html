@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Date | time.Format ":date_medium" }}
+{{ .Content }}
+{{ template "_internal/disqus.html" . }}
+<div style="justify-content:center;width:100%; display:flex; flex-wrap:wrap;gap:2em">
+{{ with .Site.Params.linkedin }}
+   <a target="_blank" href="{{ . }}">Linkedin</a>
+{{ end }}
+{{ with .Site.Params.github }}
+   <a htarget="_blank" ref="{{ . }}">Github</a>
+{{ end }}
+</div>
+<br/><br/>
+{{ end }}
