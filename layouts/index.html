@@ -1,11 +1,23 @@
 {{ define "main" }}
 
-<h1>About</h1>
+
+
+<div style="justify-content:space-around;width:100%;display:flex;flex-direction:row;height:auto;padding:1em">
+<h1 style="width:10%;margin-right:3em;margin-bottom:0px">About</h1>
 {{ with .Site.Params.description}}
-<p> 
+<p style="width:50%;margin:1em"> 
   {{ . }}  
 </p>
 {{end}}
+<div style="width:30%;margin:1em">
+<link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-component-ui.js" type="module"></script>
+
+<pagefind-modal-trigger></pagefind-modal-trigger>
+<pagefind-modal></pagefind-modal>
+</div>
+</div>
+
 <h1>Latest posts</h1>
 <br/>
 
