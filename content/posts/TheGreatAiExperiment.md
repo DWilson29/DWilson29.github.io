@@ -1,6 +1,6 @@
 +++
 title = 'The Great AI Experiment: Can An AI Agent Replace Data Science?'
-date = 2026-09-01T12:29:01-07:00
+date = 2026-09-01T00:29:01-07:00
 draft = false
 +++
 
