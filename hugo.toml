@@ -15,8 +15,16 @@ theme = "hugo-theme-console"
   github = "https://github.com/DWilson29"
   linkedin = "https://www.linkedin.com/in/dominicwilson2/"
 
-[[params.navlinks]]
-  name = "Posts"
-  url = "/posts/"
+  [[Params.navlinks]]
+    name = "About"
+    url = "/About"
+
+  [[Params.navlinks]]
+    name = "Posts"
+    url = "/posts"
+
+  [[Params.navlinks]]
+    name = "Resume"
+    url = "/Resume"
 
 

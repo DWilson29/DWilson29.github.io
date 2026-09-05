@@ -1,7 +1,7 @@
 +++
 title = 'Resume'
 date = 2026-09-05T09:37:53-07:00
-draft = true
+draft = false
 +++
 ---
 # **Dominic Wilson**
