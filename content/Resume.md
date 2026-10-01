@@ -9,7 +9,7 @@ draft = false
 
 ### **Professional Experience**
 
-##### **Automation Engineer, Intel via Team Cinder** | March 2024 \- Present | Hillsboro, OR
+##### **Automation Engineer, Intel via Team Cinder** | March 2024 \- Sept. 2026 | Hillsboro, OR
 - Developed automated tests for drivers using C\# and NUnit, utilizing TDD to expand suite coverage by \~50%, reducing build times by 13%, and providing infrastructure for reliability and deepening coverage.  
 - Architected backend communication by creating new gRPC clients for SDK integration and upgrading existing C/C++/C\#/Python clients.  
 - Managed Jenkins CI/CD pipelines and collaborated in an asynchronous, distributed environment to rapidly diagnose and resolve complex system coordination issues.  
