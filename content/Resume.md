@@ -25,6 +25,10 @@ draft = false
 ##### **Intern, City of Hillsboro Information Services** | June 2018 \- July 2018 | Hillsboro, OR	
 - Configured and deployed 50 desktop workstations alongside specialized software (ArcGIS, R) for city employees and first responders and often supported users across the entire cities infrastructure
 
+### Other Experience
+##### Team Lead F.I.R.S.T Robotics | Sept. 2010 \- May 2019
+I led several FLL and FTC teams to State and World Championships, including the FLL Legoland World Championship, winning the “Teamwork” award, and the 2019 FIRST World Championship in Houston. Over this time I worked on the code for several systems, including an ultrasonic mapping system which avoided obstacles, domain specific languages to simply autonomous execution, and unit testing with JUnit.
+
 ### **Education**
 ##### **B.S. Computer Science, Oregon State University** | Sept. 2020 \- May 2023 | Corvallis, OR
 - GPA 3.73 out of 4.00, Graduated Magna Cum Laude, twice awarded Dean’s List award.
