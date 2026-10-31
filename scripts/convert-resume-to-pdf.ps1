@@ -15,7 +15,7 @@ $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $inputFile = Join-Path $repoRoot "content\Resume.md"
-$outputFile = Join-Path $repoRoot "\Resume.pdf"
+$outputFile = Join-Path $repoRoot "Resume.pdf"
 
 if (-not (Get-Command pandoc -ErrorAction SilentlyContinue)) {
     Write-Error "pandoc is not installed or not on the PATH. Install it from https://pandoc.org/installing.html"
@@ -54,15 +54,13 @@ $tempHeader = New-TemporaryFile
 $tempHeader = Rename-Item -Path $tempHeader -NewName ([IO.Path]::GetFileName($tempHeader) + ".tex") -PassThru
 @"
 \usepackage{enumitem}
-\usepackage{setspace}
-\setlist{nosep,topsep=0pt,partopsep=0pt,parsep=0pt}
-\setstretch {0.5}
+\setlist[itemize]{itemsep=2pt,topsep=0pt,partopsep=0pt,parsep=0pt}
 \pagenumbering{gobble}
 "@ | Set-Content -LiteralPath $tempHeader -NoNewline
 
 try {
     Write-Host "Converting $inputFile to $outputFile ..."
-    pandoc $tempMarkdown -V geometry:margin=1in -V colorlinks=true -V linkcolor=blue -V urlcolor=red --include-in-header=$tempHeader -o $outputFile
+    pandoc $tempMarkdown -V geometry:margin=1in -V colorlinks=true -V linkcolor=blue -V urlcolor=red -V linestretch=1 --include-in-header=$tempHeader -o $outputFile
 
     if ($LASTEXITCODE -eq 0) {
         Write-Host "Successfully created $outputFile"

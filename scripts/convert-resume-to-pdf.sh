@@ -15,38 +15,36 @@ input_file="${repo_root}/content/Resume.md"
 output_file="${repo_root}/Resume.pdf"
 
 if ! command -v pandoc >/dev/null 2>&1; then
-    echo "Error: pandoc is not installed or not on the PATH. Install it from https://pandoc.org/installing.html" >&2
-    exit 1
+  echo "Error: pandoc is not installed or not on the PATH. Install it from https://pandoc.org/installing.html" >&2
+  exit 1
 fi
 
 if [ ! -f "$input_file" ]; then
-    echo "Error: Could not find resume file at $input_file" >&2
-    exit 1
+  echo "Error: Could not find resume file at $input_file" >&2
+  exit 1
 fi
 
 # Strip everything up to and including the first markdown line break (---),
 # which drops the Hugo front matter / metadata block above it.
 if ! grep -qx -- "---" "$input_file"; then
-    echo "Error: Could not find a '---' line break in $input_file" >&2
-    exit 1
+  echo "Error: Could not find a '---' line break in $input_file" >&2
+  exit 1
 fi
 
 temp_markdown="$(mktemp /tmp/resume-body.XXXXXX.md)"
 temp_header="$(mktemp /tmp/resume-header.XXXXXX.tex)"
 trap 'rm -f "$temp_markdown" "$temp_header"' EXIT
 
-awk '/^---[[:space:]]*$/{found=1; next} found' "$input_file" > "$temp_markdown"
+awk '/^---[[:space:]]*$/{found=1; next} found' "$input_file" >"$temp_markdown"
 
 # Tighten spacing between bullet points via a small LaTeX header include.
-cat > "$temp_header" <<'EOF'
+cat >"$temp_header" <<'EOF'
 \usepackage{enumitem}
-\usepackage{setspace}
-\setlist{nosep,topsep=0pt,partopsep=0pt,parsep=0pt}
-\setstretch{0.5}
+\setlist[itemize]{itemsep=2pt,topsep=0pt,partopsep=0pt,parsep=0pt}
 \pagenumbering{gobble}
 EOF
 
 echo "Converting $input_file to $output_file ..."
-pandoc "$temp_markdown" -V geometry:margin=1in -V colorlinks=true -V linkcolor=blue -V urlcolor=red --include-in-header="$temp_header" -o "$output_file"
+pandoc "$temp_markdown" -V geometry:margin=1in -V colorlinks=true -V linkcolor=blue -V urlcolor=red -V linestretch=1 --include-in-header="$temp_header" -o "$output_file"
 
 echo "Successfully created $output_file"
