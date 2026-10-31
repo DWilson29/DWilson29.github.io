@@ -1,7 +1,7 @@
 +++
 title = 'Can AI Replace Web Developers? Dynamic Target Scaling Website'
-date = 2026-10-30T06:40:34-07:00
-draft = true
+date = 2026-11-01T06:40:34-07:00
+draft = false
 +++
 
 I've decided to make this a bit of a series. Previously, I looked at data science and see what an AI agent could do to provide results from a laymans input. This time, I wanted to try and see what it could do with a toy example I've had bouncing in the backlog for a while.
