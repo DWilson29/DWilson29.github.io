@@ -23,7 +23,9 @@
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
-    {{ range first 3 (sort .Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+    {{ $posts := sort (where .Pages ".Params.private" "!=" true) "Date" "desc" }}
+    {{ $paginator := $.Paginate $posts }}
+    {{ range $paginator.Pages }}
         <div class="post">
             <p>
                 <div class="date">{{ .Date | time.Format ":date_medium" }}</div>
@@ -34,6 +36,20 @@
     {{ end }}
 {{ end }}
 </div>
+
+{{ with .Paginator }}
+    {{ if gt .TotalPages 1 }}
+        <nav aria-label="Post pages" style="display:flex;justify-content:center;gap:0.75em;margin:2em 0">
+            {{ range .Pagers }}
+                <a class="btn-ghost{{ if eq .PageNumber $.Paginator.PageNumber }} active{{ end }}"
+                   href="{{ .URL }}"
+                   {{ if eq .PageNumber $.Paginator.PageNumber }}aria-current="page"{{ end }}>
+                    {{ .PageNumber }}
+                </a>
+            {{ end }}
+        </nav>
+    {{ end }}
+{{ end }}
 
 <div style="justify-content:center;width:100%; display:flex; flex-wrap:wrap;gap:2em">
 {{ with .Site.Params.linkedin }}
