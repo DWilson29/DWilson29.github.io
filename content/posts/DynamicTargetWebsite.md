@@ -35,7 +35,7 @@ Each of these the AI handled well, but there were still issues. For example, mos
 Additionally, when the user transitions between yards, feet and meters, I wanted the distance to stay equivalent roughly. This required adding a feature to convert the units when making the transition.
 
 # Limitations
-This is a very toy like example. The webpage is entirely client-side render, with nothing but a server hosting it. There is no authentication, authorization, API calls or anything else that requires multiple devices working together. 
+This is a very toy like example. The webpage is entirely client-side rendered, with nothing but a server hosting it. There is no authentication, authorization, API calls or anything else that requires multiple devices working together. 
 
 The part I wasn't expecting was how well AI handled the front-end. I assume from all of the scraped web-pages, it's gathered a large enough dataset to know what a "good" looking webpage needs to have. It was generic and not exactly eye-catching, but serviceable is acceptable in this exercise. 
 
